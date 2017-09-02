@@ -23,8 +23,8 @@ var heroesApi = require('./server/heroes/heroes.api');
 /*MONGODB--------------------------------------------------*/
 
 /*Config db*/
-var mDb = 'apolliceHeroes'
-var dbUrl = 'localhost/'+ mDb;
+var mDb = 'apolliceHeroes' //Databae name
+var dbUrl = 'localhost/' + mDb;
 mongoose.connect('mongodb://' + dbUrl);
 //check if connected
 var db = mongoose.connection;
